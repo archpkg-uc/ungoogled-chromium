@@ -1,5 +1,5 @@
 # based on https://github.com/manjaro/package-CI
-name: "uAu for Manjaro"
+name: "test for Manjaro"
 
 on:
   workflow_dispatch:
@@ -16,10 +16,10 @@ jobs:
 #          boxit-host: ${{ secrets.BOXIT_HOST }}
 #          boxit-target: ${{ secrets.BOXIT_TARGET }}
 #          ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
-          package: "uau"
+          package: "manjaro-cli"
           repo: community
           ## non-standard path to source repo - default: https://gitlab.manjaro.org/packages/$repo/$package
-          source: https://aur.archlinux.org/uau.git
+          #source: 
           ## branch: (default: unstable)
           #branch: stable
           ## multilib: (default: false)

@@ -1,0 +1,28 @@
+# based on https://github.com/manjaro/package-CI
+name: "ungoogled-chromium for Manjaro"
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build-pkg:
+    runs-on: ubuntu-20.04
+    
+    steps:
+      - uses: manjaro/manjaro-pkg-action@main
+        with:
+#          gpg-key: ${{ secrets.CI_PRIV_KEY }}
+#          gpg-passphrase: ${{ secrets.CI_GPG_PASSPHRASE }}
+#          boxit-host: ${{ secrets.BOXIT_HOST }}
+#          boxit-target: ${{ secrets.BOXIT_TARGET }}
+#          ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
+          package: "ungoogled-chromium"
+          repo: community
+          ## non-standard path to source repo - default: https://gitlab.manjaro.org/packages/$repo/$package
+          source: https://aur.archlinux.org/ungoogled-chromium.git
+          ## branch: (default: unstable)
+          #branch: stable
+          ## multilib: (default: false)
+          multilib: false
+          ## custom-repo - default: ""
+          custom-repo: ""

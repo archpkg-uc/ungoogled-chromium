@@ -16,10 +16,10 @@ jobs:
 #          boxit-host: ${{ secrets.BOXIT_HOST }}
 #          boxit-target: ${{ secrets.BOXIT_TARGET }}
 #          ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
-          package: "manjaro-cli"
+          package: "yay"
           repo: community
           ## non-standard path to source repo - default: https://gitlab.manjaro.org/packages/$repo/$package
-          #source: 
+          source: "https://aur.archlinux.org/yay.git"
           ## branch: (default: unstable)
           #branch: stable
           ## multilib: (default: false)

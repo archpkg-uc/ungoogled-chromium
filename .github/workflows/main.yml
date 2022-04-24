@@ -11,8 +11,8 @@ jobs:
     steps:
       - uses: manjaro/manjaro-pkg-action@main
         with:
-#          gpg-key: ${{ secrets.CI_PRIV_KEY }}
-#          gpg-passphrase: ${{ secrets.CI_GPG_PASSPHRASE }}
+          gpg-key: ${{ secrets.CI_PRIV_KEY }}
+          gpg-passphrase: ${{ secrets.CI_GPG_PASSPHRASE }}
 #          boxit-host: ${{ secrets.BOXIT_HOST }}
 #          boxit-target: ${{ secrets.BOXIT_TARGET }}
 #          ssh-key: ${{ secrets.SSH_PACKAGE_CI }}
